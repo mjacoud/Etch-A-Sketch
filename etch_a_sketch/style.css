@@ -1,0 +1,83 @@
+/******** GLOBAL **********/
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: aqua;
+  height: 100vh;
+}
+
+header {
+  padding-top: 50px;
+}
+/*****************Header***********/
+.title {
+  font-size: 64px;
+  text-align: center;
+  margin: 50px;
+}
+/********** Body ***********/
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 170px;
+  margin: 50px;
+  margin-right: 400px;
+}
+
+/***********MENU**********/
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  font-size: 16px;
+}
+
+#colorWheel {
+  width: 100px;
+  height: 100px;
+  border: none;
+  background: none;
+  border-radius: 50px;
+  box-shadow: -5px 2px 33px 9px rgba(0, 0, 0, 0.28);
+  align-self: center;
+}
+
+input[type='color']::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+input[type='color']::-webkit-color-swatch {
+  border-radius: 100px;
+}
+.btn {
+  border: 1px solid;
+  text-align: center;
+  padding: 10px 50px;
+  border-radius: 10px;
+  font-family: 'Roboto';
+  box-shadow: 5px 5px 14px 5px rgba(0, 0, 0, 0.13);
+}
+
+#sizeValue {
+  text-align: center;
+  font-size: 24px;
+  font-family: 'Roboto';
+}
+/******** SKETCH GRID ************/
+
+#grid {
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, 1fr);
+}
+
+.row {
+  border: 1px solid white;
+}
